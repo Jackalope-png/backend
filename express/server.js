@@ -10,6 +10,9 @@ fs.readFile('userdata.json', 'utf8', (err, jsonData) => {
   }
   try {
     data = JSON.parse(jsonData);
+    app.listen(3000, () => {
+      console.log('all good buddy');
+    });
   } catch (jsonErr) {
     console.error("Error parsing JSON:", jsonErr);
   }
@@ -28,9 +31,4 @@ app.post("/login", (req, res) => {
   } else {
     return res.send({ message: "User not found" });
   }
-});
-
-
-app.listen(3000, () => {
-  console.log('all good buddy');
 });

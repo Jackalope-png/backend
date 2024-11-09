@@ -1,0 +1,13 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "A brief description of your app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server2.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
